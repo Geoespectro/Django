@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     #App de Terceros
 
     #App Propias
-    "vistaprevia"
+    "vistaprevia.apps.VistapreviaConfig",
 ]
 
 MIDDLEWARE = [

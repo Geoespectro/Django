@@ -18,6 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("vistaprevia", include("vistaprevia.urls")),
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    path("", include('vistaprevia.urls')),
+    
 ]
+# from django.contrib import admin
+# from django.urls import path, include
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('', include('vistaprevia.urls')),  # Agregar el patrón de URL para vistaprevia
+# ]
