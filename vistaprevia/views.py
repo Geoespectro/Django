@@ -1,12 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
-"""
-def index(request):
-    return HttpResponse("Hola Mundo!")
-"""
+from vistaprevia.models import Producto
+#from django.db.models import Q
 
 def index(request):
     params = {}
     params['nombre_sitio'] = 'Libros Online'
-    return render(request,'vistaprevia/index.html', params)
+    productos = Producto.objects.filter(estado="Publicado")
+    params['productos'] = productos
+    return render(request, 'vistaprevia/index.html', params)
+    
+
+
+
+

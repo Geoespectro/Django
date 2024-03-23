@@ -1,43 +1,7 @@
+{% extends "layout.html" %}
 {% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-</head>
-<body>
-  <!-- navegacion -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-<div class="container">
-    <a href="#" class="navbar-brand"> <span class="text-primary">Libros</span><span>Online</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbar-start"
-    aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-start">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="Inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Libros">Libros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Contacto">Contacto</a>
-            </li>
-        </ul>
-    </div>
-</div>
-</nav>
+{% block inner_content %}
+ 
 <!-- Carousel -->
 <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -92,8 +56,8 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
 <!-- Sección 1 -->
+
 <section class="services">
   <div class="container">
     <div class="row">
@@ -124,11 +88,8 @@
     </div>
   </div>
 </section>
-            
-           
-            
-
 <!-- Sección 2 -->
+
 <section class="section-icons">
   <div class="container">
     <div class="row">
@@ -163,8 +124,8 @@
     </div>
   </div>
 </section>
-
 <!-- seccion 3 -->
+
 <section class="product">
   <div class="container">
     <div class="row">
@@ -175,167 +136,95 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_1.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_2.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_3.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_4.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_5.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_6.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_7.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-3">
-        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-          <div class="text-center">
-            <img src="{% static 'img/img_8.jpg' %}" alt="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda.</p>
-            <a href="" class="btn btn-primary">Saber mas</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  
+    <!-- tarjetas -->
 
+    <div class="row">
+     {% for producto in productos %}
+     <div class="col-12 col-md-6 col-lg-3">
+         <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+             <div class="text-center">
+                 <img src="/media/{{producto.imagen}}" alt="{{ producto.producto }}">
+             </div>
+             <div class="card-body">
+                 <h5 class="card-title">{{ producto.producto }}</h5>
+                 <p>{{ producto.descripcion }}</p>
+                 <a href="#" class="btn btn-primary">Saber más</a>
+             </div>
+         </div>
+     </div>
+     {% endfor %}
+ </div>
+</div> 
+</div>
+</section> 
 <!-- baner -->
-<section class="banner">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12 text-center">
-              <h2>Sugeridos!!</h2>
-              <p>"Explora nuestras recomendaciones: Te presentamos los mejores títulos disponibles, especialmente seleccionados para ti."</p>
-              <div>
-                  <img src="{% static 'img/banner_4.jpg' %}" alt="">
-              </div>
-              <a href="#" class="btn btn-primary mt-3">Ver</a>
-          </div>
-      </div>
-  </div>
-</section>
-              
-<!-- formulario -->
-<section class="contact">
-  <div class="container mb-3 mb-lg-5">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-header text-center pd-2 pb-lg-5">
-          <h2>Contacto</h2>
-          <p>Ponte en contacto con nosotros para cualquier consulta o comentario que tengas. Estamos aquí para ayudarte en lo que necesites."</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
-        <form action="#" class="bg-light p-4 m-auto shadow-sm">
-          <div class="form-group">
-            <input class="form-control" placeholder="Nombre" type="text" required>
-          </div>
-          <div class="form-group">
-            <input class="form-control" placeholder="Correo electrónico" type="email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Mensaje" rows="3" required></textarea>
-          </div>
-          <button class="btn btn-primary btn-lg btn-block mt-3" type="submit">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- footer -->
-<footer class="bg-dark p-2 text-center">
-  <div class="container">
-      <div class="social-icon"><a href="#"><i class="bi bi-facebook"></i></a></div>
-      <div class="social-icon"><a href="#"><i class="bi bi-twitter"></i></a></div>
-      <div class="social-icon"><a href="#"><i class="bi bi-instagram"></i></a></div>
-    </div>
-    <div class="container">
-        <p class="text-white">Todos los derechos reservados</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-  </html>
+<section class="banner">
+<div class="container">
+ <div class="row">
+     <div class="col-md-12 text-center">
+         <h2>Sugeridos!!</h2>
+         <p>"Explora nuestras recomendaciones: Te presentamos los mejores títulos disponibles, especialmente seleccionados para ti."</p>
+         <div>
+             <img src="{% static 'img/banner_4.jpg' %}" alt="">
+         </div>
+         <a href="#" class="btn btn-primary mt-3">Ver</a>
+     </div>
+ </div>
+</div>
+</section>
+<!-- formulario -->
+
+<section class="contact">
+<div class="container mb-3 mb-lg-5">
+<div class="row">
+ <div class="col-md-12">
+   <div class="section-header text-center pd-2 pb-lg-5">
+     <h2>Contacto</h2>
+     <p>Ponte en contacto con nosotros para cualquier consulta o comentario que tengas. Estamos aquí para ayudarte en lo que necesites."</p>
+   </div>
+ </div>
+</div>
+<div class="row justify-content-center">
+ <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
+   <form action="#" class="bg-light p-4 m-auto shadow-sm">
+     <div class="form-group">
+       <input class="form-control" placeholder="Nombre" type="text" required>
+     </div>
+     <div class="form-group">
+       <input class="form-control" placeholder="Correo electrónico" type="email" required>
+     </div>
+     <div class="form-group">
+       <textarea class="form-control" placeholder="Mensaje" rows="3" required></textarea>
+     </div>
+     <button class="btn btn-primary btn-lg btn-block mt-3" type="submit">Enviar</button>
+   </form>
+ </div>
+</div>
+</div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+{% endblock %}
+
+            
+           
+            
+
+
+       
+
+      
+
+    
+                 
+    
+
+
+
+
       
       
 
