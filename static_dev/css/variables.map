@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"// Fuente\n$font-family:'Poppins', sans-serif;\n\n// Color\n$primary-color: #007bff;\n$dark-color:#000;\n$white-color: #ffffff;\n$background-color: #f8f9fa;\n$overlay-color: rgba(0, 0,0,0.5);\n\n// Tamaño\n$carousel-caption-bottom: 220px;\n$carousel-caption-width:60%;\n$card-button-bottom:10px;"
+	],
+	"names": [],
+	"mappings": ""
+}
