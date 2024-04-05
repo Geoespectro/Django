@@ -1,0 +1,47 @@
+@import 'variables';
+
+.product {
+  .container {
+    .row {
+      .col-12 {
+        .card {
+          background-color: $background-color;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          padding: 1em;
+          border-radius: 5px;
+          
+          .card-body {
+            h5 {
+              font-family: $font-family;
+              color: $primary-color;
+            }
+
+            p {
+              font-family: $font-family;
+              color: $dark-color;
+            }
+
+            a {
+              background-color: $primary-color;
+              color: $white-color;
+              border: none;
+              padding: 0.5em 1em;
+              border-radius: 5px;
+              cursor: pointer;
+              text-transform: uppercase;
+            }
+          } 
+
+          
+          img {
+            max-width: 100%; 
+            height: auto;    
+            display: block;  
+          }
+        }
+      }
+    }
+  }
+}
+
+ 

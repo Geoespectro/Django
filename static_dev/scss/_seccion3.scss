@@ -1,0 +1,25 @@
+@import 'variables';
+
+.product {
+    .container {
+      .section-header {
+        text-align: center;
+        padding-bottom: 5em;
+  
+        h2 {
+          font-family: $font-family;
+          color: $primary-color;
+        }
+  
+        p {
+          font-family: $font-family;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+  
+
+
+
+ 

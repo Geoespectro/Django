@@ -1,0 +1,38 @@
+@import 'variables';
+
+.formulario {
+    form {
+      background-color: $background-color;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  
+      .form-group {
+        margin-bottom: 1em;
+  
+        input, textarea {
+          width: 100%;
+          border: none;
+          padding: 0.5em;
+          box-sizing: border-box;
+          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+  
+      button {
+        background-color: $primary-color;
+        color: $white-color;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+  }
+     
+
+
+
+ 

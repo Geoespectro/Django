@@ -1,0 +1,50 @@
+@import 'variables';
+
+.services {
+  .card {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card-body {
+      position: relative;
+      height: 240px;
+    }
+
+    .card-title {
+      color: $white-color;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba($dark-color, 0.7);
+    }
+
+    .btn.bg-primary.text-white {
+      position: absolute;
+      bottom: $card-button-bottom;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .bg-card1 {
+    background-image: linear-gradient($overlay-color, $overlay-color), url('../img/Asistencia.jpg');
+  }
+
+  .bg-card2 {
+    background-image: linear-gradient($overlay-color, $overlay-color), url('../img/excursiones.jpg');
+  }
+
+  .bg-card3 {
+    background-image: linear-gradient($overlay-color, $overlay-color), url('../img/testimonio.jpg');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

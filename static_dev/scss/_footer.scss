@@ -1,0 +1,20 @@
+@import 'variables';
+
+footer {
+  background-color: $dark-color;
+  
+  .social-icon {
+    display: inline-block;
+    color: $white-color;
+    margin: 10px;
+    
+    &:hover {
+      color: $primary-color;
+      transform: scale(2); 
+    }
+  }
+  
+  p {
+    color: $white-color;
+  }
+}

@@ -1,0 +1,24 @@
+@import 'variables';
+
+.navbar {
+  background-color: $background-color;
+  .navbar-brand {
+    color: $primary-color;
+    .text-primary {
+      color: $primary-color;
+    }
+  }
+  .navbar-nav {
+    margin-left: auto;
+    .nav-item {
+      .nav-link {
+        color: $dark-color;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+} 
+
+

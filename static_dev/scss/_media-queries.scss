@@ -1,0 +1,41 @@
+// Media queries para el carrusel
+@media (max-width: 768px) {
+    .carousel-caption {
+      display: none; 
+    }
+  
+    .carousel-item {
+      height: auto; 
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .carousel-item {
+      height: 300px; 
+  
+      img {
+        object-fit: cover; 
+        object-position: center; 
+      }
+    }
+  
+    .carousel-caption {
+      bottom: 30px;
+    }
+  
+    .carousel-caption h5, .carousel-caption .h5 {
+      font-size: 50px;
+      margin-top: 0;
+    }
+  
+    .carousel-caption p {
+      width: 100%;
+      font-size: 16px;
+    }
+  } 
+  
+
+
+

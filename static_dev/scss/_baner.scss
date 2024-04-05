@@ -1,0 +1,25 @@
+@import 'variables';
+
+.banner {
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: #EAE5DF;
+  
+    h2, .h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-family: $font-family;
+    }
+  
+    img {
+      max-width: 100%; 
+      max-height: 500px; 
+      height: auto; 
+    }
+  } 
+  
+  
+
+
+ 

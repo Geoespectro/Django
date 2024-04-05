@@ -150,21 +150,22 @@ ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
 SITE_ID = 1
 
-if DEBUG:
-    MIDDLEWARE += [
-        "debug_toolbar.middleware.DebugToolbarMiddleware",
-    ]
-    INSTALLED_APPS += [
-        "debug_toolbar",
-    ]
-    INTERNAL_IPS = [
-        "127.0.0.1",
-    ]
+#Panel lateral de control
+# if DEBUG:
+#     MIDDLEWARE += [
+#         "debug_toolbar.middleware.DebugToolbarMiddleware",
+#     ]
+#     INSTALLED_APPS += [
+#         "debug_toolbar",
+#     ]
+#     INTERNAL_IPS = [
+#         "127.0.0.1",
+#     ]
 
-    import mimetypes
+#     import mimetypes
 
-    mimetypes.add_type("application/javascript", ".js", True)
+#     mimetypes.add_type("application/javascript", ".js", True)
 
-    DEBUG_TOOLBAR_CONFIG = {
-        "INTERCEPT_REDIRECTS": False,
-    }
+#     DEBUG_TOOLBAR_CONFIG = {
+#         "INTERCEPT_REDIRECTS": False,
+#     }
